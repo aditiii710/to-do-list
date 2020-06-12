@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>TO-DOS</title>
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+<style>
+body{
+    font-family: 'ubuntu' , cursive;
+    background-color: #60608e;
+}
+#title{
+    font-size: 50px;
+    margin-left: 500px;
+    color: black;
+}
+#to-do{
+    margin-left: 500px;
+    margin-top: 50px;  
+}
+#to-do input{
+    font-family: 'ubuntu' , cursive;
+    font-size: 35px;
+    border-radius: 40px;
+    padding: 2px 30px;
+}
+#btn{
+    border-radius: 10px;
+    background-color: #404062;
+    color: grey;
+    font-size: 27px;
+    padding: 2px 10px;
+    height: 45px;
+    width: 100px;
+}
+ul{
+    margin-top: 50px;        
+    width: 200px;
+    text-align: left;
+    height: 45px;
+    font-family: 'ubuntu' , cursive;
+    color: black;
+    font-size: 30px;
+}
+#tasks{
+    color: black;
+    font-size: 40px;
+    cursor: pointer;
+}
+</style>
+</head> 
+<body>
+<h2 id="title">WORKS TO-DO</h2>
+<h2 id="first">1. Enter text into the input field to add items to your list.</h2>
+<h2 id="second">2. Click the item to mark it as complete.</h2>
+<h2 id="third">3. Click the "Remove" to remove the item from your list.</h2>
+<div id="to-do">
+<input type="text" name="myText" id="input" placeholder="New item...">
+<button id="btn" onclick="add_to_do()">ADD</btn> 
+</div>
+<div id="tasks"> 
+<ul></ul>
+</div> 
+<script src="to-dos.js"></script>
+</body>
+</html> 
